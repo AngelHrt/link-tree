@@ -23,7 +23,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    padding: 0;
+    padding: 24px;
 
     font-family: "Inter", sans-serif;
 
@@ -59,8 +59,8 @@ body::before {
     position: relative;
     z-index: 1;
 
-    width: 392px;
-    height: 795px;
+    width: 470px;
+    height: 950px;
 
     display: flex;
     flex-direction: column;
@@ -68,7 +68,7 @@ body::before {
     background-color: #111213;
 
     border: 1px solid #2b2c2d;
-    border-radius: 6px;
+    border-radius: 10px;
 
     overflow: hidden;
 
@@ -88,7 +88,7 @@ body::before {
     position: relative;
 
     width: 100%;
-    height: 315px;
+    height: 390px;
 
     overflow: hidden;
 
@@ -140,7 +140,7 @@ body::before {
     left: 0;
     right: 0;
 
-    bottom: 22px;
+    bottom: 28px;
 
     text-align: center;
 }
@@ -150,12 +150,12 @@ body::before {
 .profile-info h1 {
     margin: 0;
 
-    font-size: 20px;
+    font-size: 28px;
     line-height: 1;
 
     font-weight: 700;
 
-    letter-spacing: -0.4px;
+    letter-spacing: -0.6px;
 
     color: #f2b7b0;
 
@@ -166,10 +166,10 @@ body::before {
 /* DESCRIPTION */
 
 .profile-info p {
-    margin-top: 7px;
+    margin-top: 11px;
 
-    font-size: 9px;
-    line-height: 1;
+    font-size: 13px;
+    line-height: 1.25;
 
     font-weight: 500;
 
@@ -179,20 +179,20 @@ body::before {
 /* PROFILE ACTIONS */
 
 .profile-actions {
-    height: 52px;
+    height: 72px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    gap: 13px;
+    gap: 19px;
 }
 
 /* ACTION BUTTON */
 
 .profile-actions a {
-    width: 18px;
-    height: 18px;
+    width: 28px;
+    height: 28px;
 
     display: flex;
     justify-content: center;
@@ -211,7 +211,7 @@ body::before {
 /* ACTION ICON */
 
 .profile-actions i {
-    font-size: 11px;
+    font-size: 17px;
 }
 
 /* ACTION HOVER */
@@ -219,24 +219,24 @@ body::before {
 .profile-actions a:hover {
     color: #ff938b;
 
-    transform: translateY(-1px);
+    transform: translateY(-2px);
 
     filter:
-        drop-shadow(0 0 4px rgba(255, 100, 90, 0.8))
-        drop-shadow(0 0 8px rgba(255, 100, 90, 0.4));
+        drop-shadow(0 0 5px rgba(255, 100, 90, 0.8))
+        drop-shadow(0 0 10px rgba(255, 100, 90, 0.4));
 }
 
 /* LINKS */
 
 .links {
-    width: calc(100% - 30px);
+    width: calc(100% - 36px);
 
-    margin: 0 auto;
+    margin: 0 auto 30px;
 
     display: flex;
     flex-direction: column;
 
-    gap: 7px;
+    gap: 11px;
 }
 
 /* LINK BUTTON */
@@ -246,17 +246,17 @@ body::before {
     --link-glow: rgba(255, 255, 255, 0.25);
 
     width: 100%;
-    height: 47px;
+    height: 64px;
 
     display: flex;
     align-items: center;
 
-    padding: 0 10px;
+    padding: 0 14px;
 
     background: #1a1b1c;
 
     border: 1px solid #303132;
-    border-radius: 7px;
+    border-radius: 9px;
 
     text-decoration: none;
 
@@ -270,8 +270,8 @@ body::before {
 /* ICON BOX */
 
 .link-icon {
-    width: 26px;
-    height: 26px;
+    width: 38px;
+    height: 38px;
 
     display: flex;
     justify-content: center;
@@ -280,7 +280,7 @@ body::before {
     flex-shrink: 0;
 
     border: 1px solid #363738;
-    border-radius: 5px;
+    border-radius: 7px;
 
     color: var(--link-color);
 
@@ -293,7 +293,7 @@ body::before {
 /* ICON */
 
 .link-icon i {
-    font-size: 12px;
+    font-size: 18px;
 
     transition:
         filter 0.3s ease,
@@ -303,13 +303,13 @@ body::before {
 /* LINK NAME */
 
 .link-name {
-    margin-left: 10px;
+    margin-left: 16px;
 
-    font-size: 8px;
+    font-size: 13px;
 
     font-weight: 700;
 
-    letter-spacing: 0.15px;
+    letter-spacing: 0.2px;
 
     color: #858585;
 
@@ -325,11 +325,11 @@ body::before {
 
     border-color: var(--link-color);
 
-    transform: translateY(-1px);
+    transform: translateY(-2px);
 
     box-shadow:
-        0 0 8px var(--link-glow),
-        0 0 16px var(--link-glow);
+        0 0 10px var(--link-glow),
+        0 0 20px var(--link-glow);
 }
 
 /* ICON BOX HOVER */
@@ -338,8 +338,8 @@ body::before {
     border-color: var(--link-color);
 
     box-shadow:
-        0 0 6px var(--link-glow),
-        inset 0 0 5px var(--link-glow);
+        0 0 8px var(--link-glow),
+        inset 0 0 6px var(--link-glow);
 }
 
 /* ICON HOVER */
@@ -347,11 +347,11 @@ body::before {
 .link:hover .link-icon i {
     color: var(--link-color);
 
-    transform: scale(1.05);
+    transform: scale(1.08);
 
     filter:
-        drop-shadow(0 0 4px var(--link-color))
-        drop-shadow(0 0 8px var(--link-glow));
+        drop-shadow(0 0 5px var(--link-color))
+        drop-shadow(0 0 10px var(--link-glow));
 }
 
 /* TEXT HOVER */
@@ -360,8 +360,8 @@ body::before {
     color: var(--link-color);
 
     text-shadow:
-        0 0 5px var(--link-color),
-        0 0 10px var(--link-glow);
+        0 0 6px var(--link-color),
+        0 0 12px var(--link-glow);
 }
 
 /* YOUTUBE */
@@ -420,7 +420,7 @@ body::before {
 
     margin-top: auto;
 
-    padding: 22px 10px 34px;
+    padding: 30px 14px 42px;
 
     border-top: 1px solid #393332;
 
@@ -436,11 +436,11 @@ body::before {
     justify-content: center;
     align-items: center;
 
-    gap: 10px;
+    gap: 16px;
 }
 
 .footer-links a {
-    font-size: 9px;
+    font-size: 12px;
 
     font-weight: 500;
 
@@ -457,26 +457,26 @@ body::before {
     color: #ffffff;
 
     text-shadow:
-        0 0 7px rgba(255, 255, 255, 0.5);
+        0 0 8px rgba(255, 255, 255, 0.5);
 }
 
 /* COPYRIGHT */
 
 .copyright {
-    margin-top: 17px;
+    margin-top: 22px;
 
-    font-size: 7px;
+    font-size: 9px;
 
     font-weight: 700;
 
-    letter-spacing: 0.3px;
+    letter-spacing: 0.4px;
 
     color: #858585;
 }
 
 /* MOBILE */
 
-@media (max-width: 430px) {
+@media (max-width: 510px) {
 
     body {
         padding: 0;
@@ -496,7 +496,17 @@ body::before {
         box-shadow: none;
     }
 
+    .profile-image {
+        height: 390px;
+    }
+
     .links {
-        margin-bottom: 24px;
+        width: calc(100% - 28px);
+
+        margin-bottom: 30px;
+    }
+
+    .link {
+        height: 64px;
     }
 }
